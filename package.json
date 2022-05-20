@@ -22,10 +22,12 @@
 		"eject": "react-scripts eject",
 		"startProd": "env-cmd -f .env.production react-scripts start",
 		"startDev": "env-cmd -f .env.development react-scripts start",
+		"build:dev": "env-cmd -f .env.development react-scripts build",
+		"build:prod": "env-cmd -f .env.production react-scripts build",
 		"runDev": "env-cmd -f .env.development serve -s build",
 		"runProd": "env-cmd -f .env.production serve -s build",
-		"build:dev": "env-cmd -f env.development react-scripts build",
-		"build:prod": "env-cmd -f env.production react-scripts build"
+		"deploy:dev": "npm run build:dev && npm run runDev",
+		"deploy:prod": "npm run build:prod && npm run runProd"
 	},
 	"eslintConfig": {
 		"extends": [
