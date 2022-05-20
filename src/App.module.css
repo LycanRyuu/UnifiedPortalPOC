@@ -1,0 +1,10 @@
+.my-class {
+	background-color: brown;
+	color: aliceblue;
+}
+
+.MyClass {
+	background-color: brown;
+	color: aliceblue;
+	overflow: hidden;
+}
